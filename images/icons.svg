@@ -63,7 +63,9 @@
 <path fill="none" stroke="#000" style="stroke: var(--color2, #000)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1" d="M23.5 12c0 6.351-5.149 11.5-11.5 11.5s-11.5-5.149-11.5-11.5c0-6.351 5.149-11.5 11.5-11.5s11.5 5.149 11.5 11.5z"></path>
 <path fill="#000" style="fill: var(--color2, #000)" d="M16 9l-1-1-3 3-3-3-1 1 3 3-3 3 1 1 3-3 3 3 1-1-3-3 3-3z"></path>
 </symbol>
-
+<symbol id="icon-close1" viewBox="0 0 24 24">
+<path d="M24 3l-3-3-9 9-9-9-3 3 9 9-9 9 3 3 9-9 9 9 3-3-9-9 9-9z"></path>
+</symbol>
 
 </defs>
 </svg>
