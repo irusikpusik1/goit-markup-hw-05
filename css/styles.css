@@ -107,6 +107,7 @@ transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
   height: 4px;
   background-color:currentColor; 
   content:'' ;
+  color:var(--bg-color);
 }
 
 .header-link:hover,
@@ -125,6 +126,7 @@ color: #404BBF;
    padding: 24px 0px;
    display: block;
    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   
    }
   .header-address:last-child:hover,
   .header-address:last-child:focus{
@@ -167,14 +169,14 @@ padding: 16px 32px;
 font-weight: 500;
 border: 1px solid  transparent;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color;
 }
 
 .test-button:hover,
 .test-button:focus {
-color: var(--accent-color);
+
 background-color: var(--bg-color);
-transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .section{
  padding-top: 120px;
@@ -216,7 +218,7 @@ transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-decor-shad{
   display: block;
-  transition:opacitiy 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:box-shadow;
 }
 .decor-pfoto{
   padding:  32px 16px;
@@ -352,7 +354,7 @@ fill: var(--color-background-primary);
   height: 100%;
   background-color: var(--first-bg-color);
   border-radius:50%; 
-  transition:opacitiy 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:background-color;
 }
 .footer-stayl{
   background-color:var(--titli-text-color);
@@ -411,7 +413,7 @@ padding-bottom: 32px;
    padding: 12px 24px;
    height: 48px;
    border: 1px solid var(--cecond-tx-color);
-   transition:opacitiy 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition-property:background-color,color, border-color, box-shadow;
 }
 .button-secondary:hover,
 .button-secondary:focus{
@@ -449,7 +451,7 @@ padding-bottom: 32px;
  color: var(--color-grau);
  border: 1px solid var(--color-grau);
  border-radius: 4px;
- transition:opacitiy 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-cli{
 width: 104px;
@@ -510,7 +512,7 @@ fill: var(--second-bg-color);
   height: 100%;
   background-color:var(--primary-text-color);
   border-radius:50%; 
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media{
   color: var(--color-background-primary);
@@ -567,7 +569,7 @@ fill: var(--second-bg-color);
   border:1px solid rgba(0, 0, 0, 0.1); 
   border-radius: 50%;
   cursor: pointer;
-  transition-property: color;
+  transition-property: color, background-color;
   background-color: var(--cecond-tx-color);
   color: black;
   flex-direction: column;
@@ -583,7 +585,7 @@ fill: var(--second-bg-color);
 .close-icon{
   width: 8px;
   height: 8px;
-  color: currentColor;
+  fill: currentColor;
 }
   .modal-close:hover, 
   .modal-close:focus{
