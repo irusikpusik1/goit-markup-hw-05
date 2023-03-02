@@ -612,7 +612,7 @@ fill: var(--second-bg-color);
 .name-modal-box{
    margin-top: 24px;
    padding-top: 24px;
-  
+   
 }
 .label{
   display: block;
@@ -641,10 +641,12 @@ fill: var(--second-bg-color);
   height:18px ;
 position: absolute;
 left: 0;
+top: 50%;
+
+
 }
 .contact-form-all{
- /* position: absolute;*/
-  /*fill: var(--bg-color);*/
+ 
   left: 0;
   right: 0;
   position: relative;
@@ -658,12 +660,39 @@ left: 0;
   height: 40px;
    border-radius: 4px;
   border:1.25px solid var(--color-grau); 
+  
 }
-/*.input-all:hover,
-.input-all:focus{
-  fill: var(--bg-color);
-}*/
 .contact-form-all:hover,
 .contact-form-all:focus{
   color: var(--bg-color);
+}
+.button-submit{
+  display: inline-block;
+ 
+}
+.button-submit-bloc{
+  text-align: center;
+  margin-top: 24px;
+  top: 100%;
+}
+.rivat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  font-weight:400 ;
+  font-size: 12px;
+  margin-top: 16px;
+ 
+}
+.rivat-all{
+  width: 360px;
+  height: 16px;
+
+}
+.textarea-all{
+  width: 360px;
+  height: 138px; 
+  
 }
