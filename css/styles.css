@@ -131,7 +131,7 @@ color: var(--bg-color);
   .header-address:last-child:hover,
   .header-address:last-child:focus{
     color: var(--bg-color);
-    transition-duration: 250ms;
+    
   }
 .maim-stayl{
   padding: 188px 0;
@@ -169,7 +169,7 @@ padding: 16px 32px;
 font-weight: 500;
 border: 1px solid  transparent;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-transition: background-color;
+transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .test-button:hover,
@@ -218,7 +218,7 @@ background-color: var(--bg-color);
 }
 .section-decor-shad{
   display: block;
-  transition:box-shadow;
+  transition:box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .decor-pfoto{
   padding:  32px 16px;
@@ -354,7 +354,7 @@ fill: var(--color-background-primary);
   height: 100%;
   background-color: var(--first-bg-color);
   border-radius:50%; 
-  transition:background-color;
+  transition:background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1); ;
 }
 .footer-stayl{
   background-color:var(--titli-text-color);
@@ -414,7 +414,9 @@ padding-bottom: 32px;
    height: 48px;
    border: 1px solid var(--cecond-tx-color);
    transition-property:background-color,color, border-color, box-shadow;
-}
+   transition-duration: 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+} 
 .button-secondary:hover,
 .button-secondary:focus{
   background-color:var(--first-bg-color);
@@ -451,7 +453,7 @@ padding-bottom: 32px;
  color: var(--color-grau);
  border: 1px solid var(--color-grau);
  border-radius: 4px;
- transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-cli{
 width: 104px;
@@ -561,9 +563,6 @@ fill: var(--second-bg-color);
 }
  .modal-close{
   position: absolute;
- margin-top: 24px;
-  margin-right: 24px;
-  margin: 0;
   height: 24px;
   width: 24px;
   border:1px solid rgba(0, 0, 0, 0.1); 
@@ -572,8 +571,6 @@ fill: var(--second-bg-color);
   transition-property: color, background-color;
   background-color: var(--cecond-tx-color);
   color: black;
-  flex-direction: column;
-  align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -589,11 +586,10 @@ fill: var(--second-bg-color);
 }
   .modal-close:hover, 
   .modal-close:focus{
-    /*transition:opacitiy 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
   background-color: var(--first-bg-color);
   color: var(--second-bg-color);
 }
-.name-modal{
+/*.name-modal{
   
   font-family: inherit;
   font-style: normal;
@@ -601,12 +597,11 @@ fill: var(--second-bg-color);
   height: 24px ;
   font-size:16px ;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   text-align:left;
   letter-spacing: 0.02em;
   color: var(--titli-text-color);
- 
+
   
 }
 .name-modal-box{
@@ -668,28 +663,28 @@ top: 50%;
 }
 .button-submit{
   display: inline-block;
- 
 }
 .button-submit-bloc{
   text-align: center;
   margin-top: 24px;
-  top: 100%;
+ 
 }
 .rivat{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 8px;
   font-weight:400 ;
   font-size: 12px;
   margin-top: 16px;
- 
+  
 }
 .rivat-all{
   width: 360px;
   height: 16px;
-
+ border:1px solid var(--color-grau);
+  box-sizing: border-box;
 }
 .textarea-all{
   width: 360px;
