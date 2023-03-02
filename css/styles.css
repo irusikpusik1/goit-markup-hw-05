@@ -593,3 +593,30 @@ fill: var(--second-bg-color);
   background-color: var(--first-bg-color);
   color: var(--second-bg-color);
 }
+.name-modal{
+  
+  font-family: inherit;
+  font-style: normal;
+  width: 360px;
+  height: 24px ;
+  font-size:16px ;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align:left;
+  letter-spacing: 0.02em;
+  color: var(--titli-text-color);
+ 
+  
+}
+.name-modal-box{
+   margin-top: 24px;
+
+  
+}
+.label{
+  display: block;
+}
+.textarea{
+  resize: none;
+}
